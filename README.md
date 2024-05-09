@@ -28,14 +28,14 @@ pip install -r requirements.txt
 
 3. Set up your OpenAI API key in app.py:
   ```python
-OpenAI.api_key = ""
+   OpenAI.api_key = ""
   ```Python
 
 ## Usage
 
 1. Run the Flask application:
   ```bash
-python app.py
+  python app.py
   ```Bash
 
 2. Access the application in your web browser at http://localhost:5000.
