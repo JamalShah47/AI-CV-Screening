@@ -22,11 +22,11 @@ The project consists of two main components:
    ```bash
    git clone https://github.com/your-username/cv-screening-app.git
    cd cv-screening-app
-Install dependencies:
-bash
-Copy code
+2. Install dependencies:
+   ```bash
 pip install -r requirements.txt
-Set up your OpenAI API key in app.py:
+
+3. Set up your OpenAI API key in app.py:
 python
 Copy code
 OpenAI.api_key = "your-api-key"
