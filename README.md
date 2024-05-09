@@ -20,25 +20,30 @@ The project consists of two main components:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/cv-screening-app.git
-   cd cv-screening-app
+   git clone https://github.com/JamalShah47/Alindor-ML-assign.git
+   cd Alindor-ML-assign
 2. Install dependencies:
    ```bash
 pip install -r requirements.txt
 
 3. Set up your OpenAI API key in app.py:
-python
-Copy code
-OpenAI.api_key = "your-api-key"
-Usage
-Run the Flask application:
-bash
-Copy code
+  ```python
+OpenAI.api_key = ""
+
+## Usage
+
+1. Run the Flask application:
+  ```bash
 python app.py
-Access the application in your web browser at http://localhost:5000.
-Upload both the candidate's CV and the job description.
-Click the "Submit" button to assess the candidate's suitability.
-The application will display a score and an explanation based on the assessment.
+
+2. Access the application in your web browser at http://localhost:5000.
+
+3. Upload both the candidate's CV and the job description.
+
+4. Click the "Submit" button to assess the candidate's suitability.
+
+5. The application will display a score and an explanation based on the assessment.
 Expected Output
-Score: A numerical score representing the candidate's suitability for the role.
+
+6. Score: A numerical score representing the candidate's suitability for the role.
 Explanation: A detailed explanation of the assessment, including factors considered and feedback.
