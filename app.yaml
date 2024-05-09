@@ -1,0 +1,9 @@
+runtime: python310
+entrypoint: gunicorn -b :$PORT app:app
+
+env_variables:
+  OPENAI_API_KEY: "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"
+
+handlers:
+- url: /.*
+  script: auto
