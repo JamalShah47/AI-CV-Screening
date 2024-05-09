@@ -22,21 +22,27 @@ The project consists of two main components:
    ```bash
    git clone https://github.com/JamalShah47/Alindor-ML-assign.git
    cd Alindor-ML-assign
+   ```
+
 2. Install dependencies:
+
    ```bash
-pip install -r requirements.txt
+   pip install -r requirements.txt
+   ```
 
 3. Set up your OpenAI API key in app.py:
-  ```python
+
+   ```python
    OpenAI.api_key = ""
-  ```Python
+   ```
 
 ## Usage
 
 1. Run the Flask application:
-  ```bash
-  python app.py
-  ```Bash
+
+   ```bash
+   python app.py
+   ```
 
 2. Access the application in your web browser at http://localhost:5000.
 
@@ -45,7 +51,9 @@ pip install -r requirements.txt
 4. Click the "Submit" button to assess the candidate's suitability.
 
 5. The application will display a score and an explanation based on the assessment.
-Expected Output
 
-6. Score: A numerical score representing the candidate's suitability for the role.
-Explanation: A detailed explanation of the assessment, including factors considered and feedback.
+## Expected Output
+
+- **Score**: A numerical score representing the candidate's suitability for the role.
+- **Explanation**: A detailed explanation of the assessment, including factors considered and feedback.
+
