@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('uploadForm');
     const outputDiv = document.getElementById('output');
+    const submitBtn = document.querySelector('button[type="submit"]');
 
     form.addEventListener('submit', async function(event) {
         event.preventDefault();
@@ -14,8 +15,16 @@ document.addEventListener('DOMContentLoaded', function() {
             return;
         }
 
+        // Disable submit button and show loading spinner
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...';
+
         const response = await processFiles(formData);
         displayOutput(response);
+
+        // Re-enable submit button and reset text
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = 'Submit';
     });
 
     async function processFiles(formData) {
@@ -39,6 +48,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         const { score, explanation } = response;
-        outputDiv.innerHTML = `<p>Score: ${score}</p><p>Explanation: ${explanation}</p>`;
+
+        // Set color based on score
+        let color = '';
+        if (score >= 7) {
+            color = 'green'; // Green for scores >= 7
+        } else {
+            color = 'red'; // Red for scores < 7
+        }
+
+        // Update output with colored score
+        outputDiv.innerHTML = `<p>Score: <span style="color: ${color};">${score}</span></p><p>Explanation: ${explanation}</p>`;
     }
 });
