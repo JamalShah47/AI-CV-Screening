@@ -44,7 +44,7 @@ The project consists of two main components:
    python app.py
    ```
 
-2. Access the application in your web browser at http://localhost:5000.
+2. Access the application in your web browser at http://localhost:5000. Or Access the app deployed on Google Cloud at https://ai-cv-screen.as.r.appspot.com/
 
 3. Upload both the candidate's CV and the job description.
 
